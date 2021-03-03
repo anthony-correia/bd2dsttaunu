@@ -8,7 +8,8 @@ latex_decay = "$D^0 \\to K^{-} \pi^+ \pi^+ \pi^-$"
 
 data_names = {
     'data'    : 'BTODstD0X',
-    'MC'      : 'BTODstD0X_MC'
+    'MC'      : 'BTODstD0X_MC',
+    'GBReweight_MC' : 'GBReweighter_BTODstD0X_MC'
 }
 data_names['reweighted_MC'] = f"bins_reweight_{data_names['MC']}_to_{data_names['data']}"
 
@@ -16,6 +17,7 @@ colors = {
     'data': 'indigo',
     'MC': 'r',
     'bkg':'y',
+    'reweighted_MC': 'g'
 }
 
 MC_description = 'LHCb simulation \n (15 + 16)'
